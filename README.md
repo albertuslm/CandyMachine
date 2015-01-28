@@ -3,7 +3,7 @@ Candy Machine
 
 IoT project, using a common Candy dispenser machine, which has been previously hacked, a Spark core (www.spark.io) and Braintree v.zero SDK.
 
-![example](https://github.com/albertuslm/CandyMachine/blob/master/media/repository/image1.JPG)
+![example](https://github.com/albertuslm/CandyMachine/blob/master/media/repository/imageGithub.png)
 
 ## Technology
 Here you have a teaser video with the full demo, enjoy!
