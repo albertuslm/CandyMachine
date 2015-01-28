@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Candy Machine - Braintree_Dev Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all"/>
+</head>
+
+<body class="single">
+  <div class="wrap">
+    <header>
+    	<div class="logo">
+    		<a href="payment.html">
+          <img src="{% static 'images/logo.png' %}" alt="CandyMachine" />
+    			<span class="title"><span>Click</span> for candies</span>
+    		</a>
+    	</div>
+    </header>
+    <div class="content">
+    	<article>
+    		<section class="head">
+        <img src="{% static 'images/BT_Dev.png' %}" alt="Braintree_Dev" />
+				<div class="date">- {{dateTime}} -</div>
+			</section>
+		</article>
+    </div>
+    <footer>
+    </footer>
+  </div>
+</body>
+</html>

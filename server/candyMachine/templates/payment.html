@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Candy Machine - Braintree_Dev Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all"/>
+</head>
+
+<body class="single">
+  <div class="wrap">
+    <header>
+    <section class="head">
+      <h5>These are NO real payments.</h5>
+    </section>
+    </header>
+    <div class="content">
+      <article>
+        Use the following information:
+        <ul>
+          <li>Credit Card: 4111 1111 1111 1111</li>
+          <li>Expiration Date: 12 / 15</li>
+          <li>CVV: 123</li>
+        </ul>
+      </article>
+      <article>
+            <form id="paymentForm" action="/checkout" method="post">
+              <div class="content">
+              <label for="twitterName">Twitter Alias (optional)</label>
+            <input type="text" id="twitterName" name="twitterName" value="">
+          </div>
+              <div id="container">
+              </div>
+              <input type="submit" value="Pay $1 USD">
+            </form>
+      </article>
+    </div>
+    <footer>
+    </footer>
+  </div>
+  <script>
+  braintree.setup("{{client_token}}","dropin",{
+    container:"container"
+  })
+  </script>
+</body>
+</html>

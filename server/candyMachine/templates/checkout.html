@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Candy Machine - Braintree_Dev Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all"/>
+</head>
+
+<body class="single">
+  <div class="wrap">
+    <div class="content">
+      <article>
+        <section class="head">
+          <h3>Payment Completed</h3>
+          <p><b>Transaction ID:</b>{{transaction_id}}</p>
+          <p>{{textToPresent}}</p>
+          <p><font color="red">{{textMessage}}</font></p>
+        </section>
+      </article>
+      <article>
+          <hr>
+          <a href="index.html">To index...</a>
+      </article>
+    </div>
+    <footer>
+    </footer>
+  </div>
+</body>
+</html>
